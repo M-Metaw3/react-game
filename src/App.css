@@ -1,0 +1,148 @@
+.App{
+  margin: 0px;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.main{
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.up{
+  height: 30%;
+  position: relative;
+}
+.bottom{
+  height: 80%;
+}
+.timer{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #78290f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #78290f;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+.money{
+height: 100%;
+text-align: center;
+display: flex;
+align-items: center;
+  width: 25%;
+  margin: auto;
+  background-color: #78290f;
+}
+.active{
+  background-color:#fad906;
+  width: 100%;
+  border-radius: 5px;
+ 
+}
+.side{
+  margin: 8px;
+  list-style: none;
+  text-align: center;
+  font-size: large;
+
+
+}
+
+.con{
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+.question{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color:#78290f; 
+  padding: 10px;
+}
+.answer{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.answer h4{
+  width: 46%;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  background-color: #fee440;
+
+
+  
+}
+
+.ans:hover ,.ans.active {
+
+  background-color: #fad906;
+  cursor: p;
+
+}
+.ans.correct{
+ animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+
+  0%,22%,42%{
+    background-color: #fad906;
+
+  }
+  20%,40%,65%{
+    background-color: #a59008;
+  }
+  66%,100%{
+ background-color: #26f10b;
+    
+  
+  }
+  
+}
+.ans.wrong{
+  animation: wrong 3s ease forwards;
+ }
+ 
+ @keyframes wrong {
+ 
+   0%,22%,42%{
+     background-color: #fad906;
+ 
+   }
+   20%,40%,65%{
+     background-color: #a59008;
+   }
+   66%,100%{
+  background-color: #e60000;
+     
+   
+   }
+   
+ }
+.ern{
+  width: 100%;
+  text-align: center;
+}
